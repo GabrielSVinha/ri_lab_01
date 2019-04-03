@@ -6,6 +6,10 @@ from ri_lab_01.items import RiLab01Item
 from ri_lab_01.items import RiLab01CommentItem
 
 
+class Brasil247NewsParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        pass
+
 class Brasil247Spider(scrapy.Spider):
     name = 'brasil_247'
     allowed_domains = ['brasil247.com']
