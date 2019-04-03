@@ -9,6 +9,7 @@ from ri_lab_01.items import RiLab01CommentItem
 class Brasil247Spider(scrapy.Spider):
     name = 'brasil_247'
     allowed_domains = ['brasil247.com']
+    download_delay = 5.0
     start_urls = []
 
     def __init__(self, *a, **kw):
